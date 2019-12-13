@@ -6,31 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Password Generator</h1>
-        </header>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Password Generator</a>
+    </nav>
+    <div class="container">
 
-        <div class="Card">
-            <div class="card-header">
-                <h2>Generator Password</h2>
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12">
+
+                <div class="content">
+                    <h4>Generator Password</h4>
+                    <br />
+                    <input type="text" id="display">
+                    <br />
+                    <input type="range" min="0" max="100" name="slider" id="slider" >
+                    <br />
+                    <button onclick="">Generate Password</button>
+                    <button onclick=""> Copy to Clipboard</button>
+                </div>
+
             </div>
-            <div class="card-body">
-                <textarea readonly id="password" placeholder="Your secure Password"
-                    aria-label="Generate Password"></textarea>
-            </div>
-            <div class="card-footer">
-                <button id="generate" class="btn">Generate Password</button>
-                <button id="generate" class="btn">Copy to Clipboard</button>
-            </div>
+
         </div>
-    
     </div>
-    <script src="scripts.js"></script>
+    
 </body>
-
 </html>

@@ -1,11 +1,15 @@
- h1 {
+.content {
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: lightgray;
+    background-color: gray;
     padding: 20px;
     width: 100%;
     text-align: center;
+} 
+#display {
+    width: 100%;
 }
- #card {
-     width: 100%
- }
+
+#slider {
+    width: 100%;
+}

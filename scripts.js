@@ -1,5 +1,8 @@
-// Generator functions 
+// Generator random password
 
-function getRandomLower() {
+function generate(){
+    // set password length/ complexity
+    let complexity = document.getElementById("slider").Value;
     
+    let Value = "ABCDEFGHIJKLMNOPQ"
 }
