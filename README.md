@@ -1,5 +1,7 @@
 # Homework-3
+assignment code 
 ** password generator 
+
 
 // Generator random password
 // set password length/ complexity
