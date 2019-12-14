@@ -1,17 +1,23 @@
-// Generator random password
-
 function generate() {
-    // set password length/ complexity
-    var complexity = document.getElementById("slider").Value;
 
-    //possible password values 
-    var Value = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmopqurstuvwxyz1234567890!@#$%&*^()_+";
+    var complexity = document.getElementById("slider").nodeValue;
+
+    var Values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmopqurstuvwxyz1234567890!@#$%&*^()_+";
     var password = "";
 
-    //create for loop to choose password characters
     for (var i = 0; i <= complexity; i++) {
-        password = password + Value.charAt(Math.floor(Math.random() * Math.floor(Value.length - 1)));
+        password = password + Values.charAt(Math.floor(Math.random() * Math.floor(Values.length - 1)));
     }
-    //add password to textbook/display area 
-    document.getElementById("display").Value = password
+
+    document.getElementById("display").Value = password;
 }
+ 
+document.getElementById("length").innerHTML = "Length: 50"
+document.getElementById("slider").oninput - function(){
+    if (document.getElementById("slider").Value > 0){
+        document.getElementById("length").innerHTML = "Length :" +document.getElementById("slider").Value;
+    }
+
+}
+
+
